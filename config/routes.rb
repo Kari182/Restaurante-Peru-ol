@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :plates
   resources :categories
   devise_for :users
-  root to: "pages#home"
+  root to: "pages#contacto"
 
   
   get 'pages/home'

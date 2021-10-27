@@ -34,7 +34,6 @@
 
   <div class="field">
     <%= form.label :category_id %>
-    
     <%= collection_select(:plate, :category_id, Category.all, :id, :name )%>
   </div>
 
