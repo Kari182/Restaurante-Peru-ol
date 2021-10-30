@@ -1,0 +1,46 @@
+<!-- Formulario-->
+    <section id="formulario">
+      <div class="container mx-auto">
+        <div class="row py-4">
+          <div class="col text-center">
+            <small>Bienvenido de nuevo</small>
+            <h2>Panel de control</h2>
+            <%= image_tag 'logo_perunol.svg', alt: 'icon', :size => "64x64", class: 'd-block w-100' %>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col text-center"> 
+            <h3>Inicia Sesión</h3>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-xl-8 col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Dirección de correo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recordar contraseña</label>
+              </div>
+              <button type="submit" class="btn btn-dark col-8">Entrar</button>
+            </form>
+            <div class="row py-4">
+              <div class="col text-center">
+                <a class="dropdown-item" href="#">¿Eres nuevo? Registrate</a>
+          <a class="dropdown-item" href="#">¿Olvidaste tu contraseña?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+       <!--/ Formulario-->

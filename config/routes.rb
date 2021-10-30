@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   root to: "pages#contacto"
 
   
-  get 'pages/home'
+  get "/home", to:"home#index"
   get 'pages/carta'
   get 'pages/contacto'
+  get 'pages/admin'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
