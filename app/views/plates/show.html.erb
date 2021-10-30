@@ -1,5 +1,10 @@
-<p id="notice"><%= notice %></p>
-
+<div class="container">
+  <div class="card text-center my-5 col-8">
+    
+    <p id="notice"><%= notice %></p>
+    <h5 class="card-header">Mostrar platos</h5>
+  <div class="card-body">
+  </div>
 <p>
   <strong>Name:</strong>
   <%= @plate.name %>
@@ -31,3 +36,5 @@
 <% if @plate.image.attached? %>
   <image src="<%= url_for(@plate.image) %>" height=200>
 <% end %>
+  </div>
+</div>
