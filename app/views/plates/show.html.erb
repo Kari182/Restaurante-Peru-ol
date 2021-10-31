@@ -1,40 +1,35 @@
 <div class="container">
   <div class="card text-center my-5 col-8">
-    
     <p id="notice"><%= notice %></p>
-    <h5 class="card-header">Mostrar platos</h5>
-  <div class="card-body">
-  </div>
-<p>
-  <strong>Name:</strong>
-  <%= @plate.name %>
-</p>
+    <h4 class="card-header">Platos
+    </h4>
+     
+     <div class="card-body py-4">
+     <h5>Nombre plato</h5>
+     <p class="card-text"> 
+      <%= @plate.name %></p>
+    
+  <h5>Precio:</h5>
+  <p class="card-text">
+  <%= @plate.price %></p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @plate.price %>
-</p>
+  <h5>Descripción:</h5>
+  <p class="card-text"><%= @plate.description %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @plate.description %>
-</p>
 
-<p>
-  <strong>Image:</strong>
-  <%= @plate.image %>
-</p>
+  <h5>Imagen del plato</h5>
+  <p class="card-text"><%= @plate.image %></p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @plate.category_id %>
-</p>
 
-<%= link_to 'Edit', edit_plate_path(@plate) %> |
-<%= link_to 'Back', plates_path %>
+  <h5>Categoria:</h5>
+  <p class="card-text"><%= @plate.category.name %></p>
+
+<%= link_to 'Edit', edit_plate_path(@plate), class: "btn btn-success" %> 
+<%= link_to 'Back', plates_path, class: "btn btn-dark" %>
 
 <% if @plate.image.attached? %>
   <image src="<%= url_for(@plate.image) %>" height=200>
 <% end %>
+   </div>
   </div>
 </div>
