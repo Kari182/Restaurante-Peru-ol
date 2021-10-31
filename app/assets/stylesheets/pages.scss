@@ -30,7 +30,6 @@ h4 {
 h6 {
     font-family: 'asap', sans-serif;
     font-size: 13px;
-    color: #8B8D91;
 
 }
 
@@ -152,6 +151,12 @@ p {
 #carousel .overlay .row {
     height: 100%;
 
+}
+
+#boTam {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 /* .carousel-item {
     transition: transform 1s ease, opacity .5s ease-out;
