@@ -26,6 +26,7 @@
          </div>
       </section>
       <!--/ Carrusel-->
+      
       <!--Categoria-->
       <article id="categoria" class="my-5">
          <div class="container-fluid">
@@ -94,7 +95,9 @@
                      <div class="card-body">
                         <h5 class="card-title">Ceviche Mixto</h5>
                         <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-                        <a href="#" class="btn btn-dark">Ver plato</a>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Ver plato
+  </button>
                      </div>
                   </div>
                </div>
@@ -165,10 +168,43 @@
                   <%= image_tag 'restaurante.jpg', alt: 'restaurante', class: 'd-block w-100', :size => "" %>
                   <p class="pt-4">Sede principal de Móstoles, España</p>
               </div> 
-              <div class="d-grid gap-2 col-3 mx-auto py-2">
+              <div class="col-12 py-4">
+                  <div class="d-grid  col-6 mx-auto py-4">
+                     <button class="btn btn-dark" type="button">Ver más sobre Peruño</button>
+                  </div>
+               </div>
+              <div class="d-grid gap-2 col-6 mx-auto py-2">
                      <button class="btn btn-outline-dark" type="button">Más sobre Peruñol</button>
                   </div>
          </div>
          </div>
       </section>
        <!-- / Nosotros-->
+
+<!--Modal 4 -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+            <%= image_tag '001.jpg', alt: 'comida', class: 'd-block 100px', :size => "470x400"  %>    
+            <h5 class="modal-title my-2" id="staticBackdropLabel">
+               Ceviche Mixto
+            </h5>
+            <p class="pb-1">Ración del plato: 1 unidad</p>
+            <p>Mixtura de mariscos y pescados frescos, marinados en jugo de limón y aliño peruano, acompañado de cebolla morada, especias frescas, terminada con palta y cebollín. 
+               Incluyen tostadas y salsa de cilantro.
+            </p>
+            <h4 class="text-center py-3">14,00 €</h4>
+            <h6>Alergénos</h6>
+            <p>Contiene: Pescado</abbr>pescado, crustáceos y <abbr title="Charlas de huevos" data-bs-toggle="tooltip">Huevo</abbr> moluscos.</p>
+            <p>Algunos platos pueden contener trazas de huevo cascara. Por diferentes … Leer más </p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar al restaurante</button>
+         </div>
+      </div>
+   </div>
+</div>
