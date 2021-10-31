@@ -1,12 +1,13 @@
-<p id="notice"><%= notice %></p>
+
 
 <!-- inicio formulario-->
 <div class="container">
+<p id="notice"><%= notice %></p>
   <div class="row">
 <h1>Categorias</h1>
 
 <table class="table table-bordered">
-  <thead class="table-warning">
+  <thead class="table-success">
     <tr>
       <th>Nombre Plato</th>
       <th>imágen</th>
@@ -28,8 +29,10 @@
 </table>
 
 <br>
-
-<button type="button" class="btn btn-dark" data-bs-toggle="button" autocomplete="off"><%= link_to 'New Category', new_category_path %></button>
 </div>
+<%= link_to 'Nueva categoria', new_category_path, class: "btn btn-danger my-2" %>
+<br>
+<%= link_to 'Ir a platos', plates_path, :class => "btn btn-outline-secondary my-2"  %>
+
 </div>
 

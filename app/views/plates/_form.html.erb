@@ -11,33 +11,33 @@
     </div>
   <% end %>
 
-  <div class="form-group">
+  <div class="form-group my-2">
     <%= form.label :name %>
     <%= form.text_field :name, class: "form-control" %>
     
   </div>
   
-  <div class="form-group">
+  <div class="form-group my-2">
     <%= form.label :price %>
     <%= form.text_field :price, class: "form-control" %>
   </div>
 
-  <div class="form-group">
+  <div class="form-group my-2">
     <%= form.label :description %>
     <%= form.text_area :description, class: "form-control" %>
   </div>
 
-  <div class="form-group">
+  <div class="form-group my-2">
     <%= form.label :image %>
     <%= form.file_field :image, class: "form-control" %>
   </div>
 
-  <div class="form-group"> 
+  <div class="form-group my-2"> 
     <%= form.label :category_id %>
-    <%= collection_select(:plate, :category_id, Category.all, :id, :name, :class => "form-select" ) %>
+    <%= collection_select(:plate, :category_id, Category.all, :id, :name, :class => "custom-select" ) %>
   </div>
 
   <div class="actions" >
-    <%= form.submit "Crear nuevo plato", :class => "btn btn-danger" %>
+    <%= form.submit "Crear nuevo plato", :class => "btn btn-danger my-3" %>
   </div>
 <% end %>

@@ -1,3 +1,158 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    position: relative;
+  }
+
+
+body {
+    font-family: 'Asap', sans-serif;
+    
+  }
+h1 {
+    font-size: 40px;
+
+}
+h2 {
+    font-size: 32px;
+
+}
+h3 {
+    font-size: 24px;
+
+}
+h4 {
+    font-size: 18px;
+
+}
+h6 {
+    font-family: 'asap', sans-serif;
+    font-size: 13px;
+    color: #8B8D91;
+
+}
+
+p {
+    font-family: 'asap', sans-serif;
+    font-size: 17px;
+    color: #8B8D91;
+    
+}
+
+ #header img {
+     width: 90px;
+ }
+
+ #calidad {
+     align-items: center;
+     padding: 60px 60px;
+     background-color:#F3F5F4;
+
+
+ }
+ #calidad img {
+     width: 84px;
+
+ }
+ #calidad h5 {
+    
+    padding-top: 16px;
+
+}
+#footer {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: #F3F5F4;
+    color: azure;
+}
+
+#restaurante {
+    align-items: center;
+    background-color:#FFFFFF;
+
+
+}
+
+#dark {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: #1C1F2F;
+    color: azure;
+}
+
+#dark li {
+    color: white;
+   }
+
+#footer a {
+ color: azure;
+}
+
+#footer img {
+    width: 16px;
+    background-color: white;
+    color: white;
+   }
+#formulario {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    color: #545454;
+}
+
+#formulario img{
+    width: 120px;
+}
+
+#formulario .dropdown-item {
+    padding-top: 20px;
+
+}
+.tooltip-inner {
+    background-color: #F12B5E;
+    }
+.modal-title{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#directiva img{
+    height: 350px;
+    object-fit: cover;
+}
+#carrusel .carousel-inner img{
+    max-height: 70vh;
+    object-position: cover;
+    filter: grayscale(60%);
+
+}
+#carrusel .carousel-inner p{
+    color: #E2E2E2;
+
+}
+
+#carousel {
+    position: relative;
+
+}
+
+#carousel .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    z-index: 1;
+}
+
+#carousel .overlay .container, 
+#carousel .overlay .row {
+    height: 100%;
+
+}
+/* .carousel-item {
+    transition: transform 1s ease, opacity .5s ease-out;
+} */

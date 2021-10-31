@@ -1,2 +1,171 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+      <section id="carrusel">
+         <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <%= image_tag 'prin.jpg', alt: 'food', class: 'd-block w-100' %>
+               </div>
+               <div class="carousel-item">
+                  <%= image_tag 'prin_01.jpg', alt: 'food2', class: 'd-block w-100' %>
+               </div>
+               <div class="overlay carousel-caption">
+                  <div class="container">
+                     <div class="row align-items-center">
+                        <div class="col-8 text-start col-md-6 text-md-start">
+                           <h1>Comida internacional Peruana</h1>
+                           <p>Comida sana y fresca 100% peruana. Tu puedes llamar para reservar mesa o pedir 
+                              tu orden de delivery ahora ya!
+                           </p>
+                           <div class="d-grid gap-2 col-6 mx-start">
+                              <button class="btn btn-danger" type="button">Ver Menú</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--/ Carrusel-->
+      <!--Categoria-->
+      <article id="categoria" class="my-5">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-12 mb-4 text-center">
+                  <h3>Gastronomia Peruana</h3>
+                  <p>Directo a tu mesa. Directo a tu casa</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                     
+                     <%= image_tag '003.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+                     <div class="card-body">
+                        <h5 class="card-title">Ceviche Mixto</h5>
+                        <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
+                        <a href="#" class="btn btn-dark">Ver plato</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                     
+                     <%= image_tag '001.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+                     <div class="card-body">
+                        <h5 class="card-title">Ceviche de pescado</h5>
+                        <p class="card-text">Judí­as de soja hervidas. Otra de la especialidades de la cocina peruana.</p>
+                        <a href="#" class="btn btn-dark">Ver plato</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                     <%= image_tag '002.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+                     <div class="card-body">
+                        <h5 class="card-title">Reineta a lo pobre</h5>
+                        <p class="card-text">Fideos a la plancha con verduras y salsa picante. Estos son nuestros...</p>
+                        <a href="#" class="btn btn-dark">Ver plato</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                     <%= image_tag 'food_01.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+                     <div class="card-body">
+                        <h5 class="card-title">Ceviche Mixto</h5>
+                        <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
+                        <a href="#" class="btn btn-dark">Ver plato</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                    <%= image_tag 'food_01.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+                     <div class="card-body">
+                        <h5 class="card-title">Ceviche Mixto</h5>
+                        <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
+                        <a href="#" class="btn btn-dark">Ver plato</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+                  <div class="card">
+                     <%= image_tag '001.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+                     <div class="card-body">
+                        <h5 class="card-title">Ceviche Mixto</h5>
+                        <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
+                        <a href="#" class="btn btn-dark">Ver plato</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 py-4">
+                  <div class="d-grid gap-2 col-3 mx-auto py-4">
+                     <button class="btn btn-dark" type="button">Ver todos</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </article>
+      <!--/ Categoria-->
+
+      <!-- Calidad-->
+      <section id="calidad" class="py-5">
+         <div class="container-fluid">
+            <div class="row mx-auto align-items-center">
+               <div class="col-12 text-center py-5">
+                  <h2>¿Porqué elegirnos?</h2>
+                  <p>Calidad ante todo para nuestro clientes</p>
+               </div>
+               <div class="col-lg-4 text-center py-4">
+                  <%= image_tag 'vegetables.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
+                  <h5>Comida fresca</h5>
+                  <p>“Cuando llega el calor, lo que más nos apetece es tener comida fresca, 
+                     riquísima pero también que llevo poco tiempo en la cocina.
+                     Tradition while constantly
+                  </p>
+               </div>
+               <div class="col-lg-4 text-center py-4">
+                  <%= image_tag 'fair.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
+                  <h5>Comercio justo</h5>
+                  <p>“El Comercio Justo es un movimiento internacional que lucha por una mayor justicia global 
+                     en lo económico, social, humano y medioambiental
+                     Tradition while constantly.
+                  </p>
+               </div>
+               <div class="col-lg-4 text-center py-4">
+                  <%= image_tag 'take.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
+                  <h5>A domicilio y retiro en local</h5>
+                  <p>“Hacemos envios dentro de Móstoles
+                     En el horario de 18:00 a 20:00 
+                     de martes a domingo.  y medioambiental
+                     Tradition while constantly.
+                  </p>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+       <!-- / Calidad-->
+
+        <!-- Nosotros-->
+      <section id="restaurante" class="py-5">
+         <div class="container-fluid">
+            <div class="row mx-auto ">
+               <div class="col-12 text-center py-5">
+                  <h2>Acerca de nosotros</h2>
+                  <p>Somos el mejor restaurante de Móstoles desde el 2010</p>
+               
+                  <p class="py-4">“Cultivate tradition while constantly innovating” – Domaine Clarence Dillon’s philosophy 
+                  also applies to Le Clarence. Chef Christophe Pelé’s cooking revisits the great classics of 
+                  French cuisine in an audacious, modern, and devilishly seductive way. Furthermore, the attentive 
+                  service does not preclude a convivial atmosphere. Everything possible is done to make your meal 
+                  pleasurable and conducive to delicious discoveries. The famous Michelin Guide has just awarded Le 
+                  Clarence with 2 stars in its 2017 edition
+                  </p>
+                  <%= image_tag 'restaurante.jpg', alt: 'restaurante', class: 'd-block w-100', :size => "" %>
+                  <p class="pt-4">Sede principal de Móstoles, España</p>
+              </div> 
+         </div>
+         </div>
+      </section>
+       <!-- / Nosotros-->

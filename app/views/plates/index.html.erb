@@ -1,15 +1,14 @@
-<p id="notice"><%= notice %></p>
+
 
 <!-- inicio formulario-->
 <div class="container">
-  <div class="row">
-    
-    
+<p id="notice"><%= notice %></p>
+  <div class="row"> 
     <h1>Lista de Platos</h1>
 
 <table class="table table-bordered">
 <caption>Lista de platos</caption>
-  <thead class="table-warning">
+  <thead class="table-success">
     <tr>
       <th scope="col">Nombre</th>
       <th scope="col">Precio</th>
@@ -28,19 +27,20 @@
         <td><%= plate.description %></td>
         <td><%= plate.image %></td>
         <td><%= plate.category.name %></td>
-        <td><%= link_to 'Show', plate %></td>
-        <td><%= link_to 'Edit', edit_plate_path(plate) %></td>
-        <td><%= link_to 'Destroy', plate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', plate, class: "btn btn-success" %></td>
+        <td><%= link_to 'Edit', edit_plate_path(plate), class: "btn btn-secondary" %></td>
+        <td><%= link_to 'Destroy', plate, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-warning" %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Plate', new_plate_path %>
-
 </div>
+<%= link_to 'Agregar nuevo plato', new_plate_path, :class => "btn btn-danger my-2" %>
+<br>
+<%= link_to 'Ir a Categorias', categories_path, :class => "btn btn-light my-2"  %>
+
 </div>
 
 
