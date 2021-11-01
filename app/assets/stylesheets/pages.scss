@@ -123,7 +123,7 @@ p {
 #carrusel .carousel-inner img{
     max-height: 70vh;
     object-position: cover;
-    filter: grayscale(60%);
+    filter: grayscale(10%);
 
 }
 #carrusel .carousel-inner p{
@@ -142,7 +142,7 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     z-index: 1;
 }

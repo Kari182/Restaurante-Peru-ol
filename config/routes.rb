@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root to: "pages#contacto"
 
   
-  get "/home", to:"home#index"
+  
   get 'pages/carta'
   get 'pages/contacto'
   get 'pages/admin'
