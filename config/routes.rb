@@ -1,11 +1,16 @@
 Rails.application.routes.draw do
+  root to: "pages#home"
   resources :plates
   resources :categories
-  devise_for :users
-  root to: "pages#contacto"
+  
+  devise_for :users 
+  
 
-  
-  
+get "home", to: 'pages#home'
+get "carta", to: 'pages#carta' 
+get "contacto", to: 'pages#contacto'  
+get "admin", to: 'pages#admin'
+
   get 'pages/carta'
   get 'pages/contacto'
   get 'pages/admin'

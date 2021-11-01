@@ -1,9 +1,11 @@
 <!--menu scrollspy -->
 <div class="container">
 <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 fixed-top">
-   <h5><a class="navbar-brand" href="#">volver</a></h5>
-   <a class="navbar-brand" href="#">Menú Peruñol</a>
-   <ul class="nav nav-pills">
+   <h6>
+   <%= link_to 'Volver atras', home_path, class: "link-dark" %>
+   </h6>
+   <a class="navbar-brand" href="#">Carta del Peruñol</a>
+   <ul class="nav nav-tabs">
       <li class="nav-item">
          <a class="nav-link" href="#scrollspyHeading1">Entrantes</a>
       </li>
@@ -26,31 +28,31 @@
 <div class="row">
 <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
    <div class="card">
-      <%= image_tag '003.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+      <%= image_tag 'tamales.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
       <div class="card-body">
-         <h5 class="card-title">Ceviche Mixto</h5>
+         <h5 class="card-title">Tamales</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato 5,00 €</a>
       </div>
    </div>
 </div>
 <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
    <div class="card">
-      <%= image_tag '001.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+      <%= image_tag 'yuca.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
       <div class="card-body">
-         <h5 class="card-title">Ceviche de pescado</h5>
+         <h5 class="card-title">Yuca Frita</h5>
          <p class="card-text">Judí­as de soja hervidas. Otra de la especialidades de la cocina peruana.</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato 8,00 €</a>
       </div>
    </div>
 </div>
 <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
    <div class="card">
-      <%= image_tag '002.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+      <%= image_tag 'papa-huancaina.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
       <div class="card-body">
-         <h5 class="card-title">Reineta a lo pobre</h5>
+         <h5 class="card-title">Papa a la Huancaína</h5>
          <p class="card-text">Fideos a la plancha con verduras y salsa picante. Estos son nuestros...</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato 8,00 €</a>
       </div>
    </div>
 </div>
@@ -58,9 +60,9 @@
    <div class="card">
       <%= image_tag 'food_01.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
       <div class="card-body">
-         <h5 class="card-title">Ceviche Mixto</h5>
+         <h5 class="card-title">Ensalada Mixta</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato 6,00 €</a>
       </div>
    </div>
 </div>
@@ -68,9 +70,9 @@
    <div class="card">
       <%= image_tag 'food_01.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
       <div class="card-body">
-         <h5 class="card-title">Ceviche Mixto</h5>
+         <h5 class="card-title">Pan con Chicharrón</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato 6,00 €</a>
       </div>
    </div>
 </div>
@@ -78,10 +80,10 @@
    <div class="card">
       <%= image_tag '001.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
       <div class="card-body">
-         <h5 class="card-title">Ceviche Mixto</h5>
+         <h5 class="card-title">Causa Limeña</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-         Ver plato
+         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+         Ver plato 6,00 €
          </button>
       </div>
    </div>
@@ -95,7 +97,7 @@
       <div class="card-body">
          <h5 class="card-title">Ceviche Mixto</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato</a>
       </div>
    </div>
 </div>
@@ -105,7 +107,7 @@
       <div class="card-body">
          <h5 class="card-title">Ceviche de pescado</h5>
          <p class="card-text">Judí­as de soja hervidas. Otra de la especialidades de la cocina peruana.</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato</a>
       </div>
    </div>
 </div>
@@ -115,7 +117,7 @@
       <div class="card-body">
          <h5 class="card-title">Reineta a lo pobre</h5>
          <p class="card-text">Fideos a la plancha con verduras y salsa picante. Estos son nuestros...</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato</a>
       </div>
    </div>
 </div>
@@ -125,7 +127,7 @@
       <div class="card-body">
          <h5 class="card-title">Ceviche Mixto</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato</a>
       </div>
    </div>
 </div>
@@ -135,7 +137,7 @@
       <div class="card-body">
          <h5 class="card-title">Ceviche Mixto</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-dark">Ver plato</a>
+         <a href="#" class="btn btn-outline-dark">Ver plato</a>
       </div>
    </div>
 </div>
@@ -145,7 +147,7 @@
       <div class="card-body">
          <h5 class="card-title">Ceviche Mixto</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
          Ver plato
          </button>
       </div>
@@ -353,7 +355,8 @@
    </div>
 </div>
 <!-- /menu scrollspy -->
-<!--Modal -->
+
+<!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">

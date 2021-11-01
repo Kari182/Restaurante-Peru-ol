@@ -1,186 +1,167 @@
-      <section id="carrusel">
-         <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <%= image_tag 'portada0.jpg', alt: 'food', class: 'd-block w-100' %>
-               </div>
-               <div class="carousel-item">
-                  <%= image_tag 'portada1.jpg', alt: 'food2', class: 'd-block w-100' %>
-               </div>
-               <div class="overlay carousel-caption">
-                  <div class="container">
-                     <div class="row align-items-center">
-                        <div class="col-8 text-start col-md-6 text-md-start">
-                           <h1>Comida internacional Peruana</h1>
-                           <p>Comida sana y fresca 100% peruana. Tu puedes llamar para reservar mesa o pedir 
-                              tu orden de delivery ahora ya!
-                           </p>
-                           <div class="d-grid gap-2 col-6 mx-start">
-                              <button class="btn btn-danger" type="button">Ver Menú</button>
-                           </div>
-                        </div>
+<!-- Carrusel-->
+<section id="carrusel">
+   <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner">
+         <div class="carousel-item active">
+            <%= image_tag 'portada0.jpg', alt: 'food', class: 'd-block w-100' %>
+         </div>
+         <div class="carousel-item">
+            <%= image_tag 'portada1.jpg', alt: 'food2', class: 'd-block w-100' %>
+         </div>
+         <div class="overlay carousel-caption">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-8 text-start col-md-6 text-md-start">
+                     <h1>Comida internacional Peruana</h1>
+                     <p>Comida sana y fresca 100% Peruana. Puedes reservar mesa y pedir 
+                        tu orden directo con nosotros o en las Apps de delivery como Globo y Just Eat.
+                     </p>
+                     <div class="d-grid gap-2 col-6 mx-start">
+                        <%= link_to 'Ver la carta', carta_path, class: "btn btn-danger" %>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </section>
-      <!--/ Carrusel-->
-      
-      <!--Categoria-->
-      <article id="categoria" class="my-5">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-12 mb-4 text-center">
-                  <h3>Gastronomia Peruana</h3>
-                  <p>Directo a tu mesa</p>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
-                  <div class="card">
-                     
-                     <%= image_tag '003.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
-                     <div class="card-body">
-                        <h5 class="card-title">Ceviche Mixto</h5>
-                        <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-                        <a href="#" class="btn btn-dark">Ver plato</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
-                  <div class="card">
-                     
-                     <%= image_tag '001.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
-                     <div class="card-body">
-                        <h5 class="card-title">Ceviche de pescado</h5>
-                        <p class="card-text">Judí­as de soja hervidas. Otra de la especialidades de la cocina peruana.</p>
-                        <a href="#" class="btn btn-dark">Ver plato</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
-                  <div class="card">
-                     <%= image_tag '002.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
-                     <div class="card-body">
-                        <h5 class="card-title">Reineta a lo pobre</h5>
-                        <p class="card-text">Fideos a la plancha con verduras y salsa picante. Estos son nuestros...</p>
-                        <a href="#" class="btn btn-dark">Ver plato</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
-                  <div class="card">
-                     <%= image_tag 'food_01.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
-                     <div class="card-body">
-                        <h5 class="card-title">Ceviche Mixto</h5>
-                        <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-                        <a href="#" class="btn btn-dark">Ver plato</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
-                  <div class="card">
-                    <%= image_tag 'food_01.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
-                     <div class="card-body">
-                        <h5 class="card-title">Ceviche Mixto</h5>
-                        <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-                        <a href="#" class="btn btn-dark">Ver plato</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
-                  <div class="card">
-                     <%= image_tag '001.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
-                     <div class="card-body">
-                        <h5 class="card-title">Ceviche Mixto</h5>
-                        <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Ver plato
-  </button>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-12 py-4">
-                  <div class="d-grid gap-2 col-3 mx-auto py-4">
-                     <button class="btn btn-dark" type="button">Ver todos</button>
-                  </div>
+      </div>
+   </div>
+</section>
+<!--/ Carrusel-->
+<!--Categoria-->
+<article id="categoria" class="my-5">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-12 mb-4 text-center">
+            <h3>Gastronomia Peruana</h3>
+            <p>Directo a tu mesa</p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+            <div class="card">
+               <%= image_tag 'cevicheMixto.jpg', alt: 'Ceviche Mixto', class: 'd-block w-100', class: 'card-img-top' %>
+               <div class="card-body">
+                  <h5 class="card-title">Ceviche Mixto</h5>
+                  <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
+                  <a href="#" class="btn btn-outline-dark">16,00 €</a>
                </div>
             </div>
          </div>
-      </article>
-      <!--/ Categoria-->
-
-      <!-- Calidad-->
-      <section id="calidad" class="py-5">
-         <div class="container-fluid">
-            <div class="row mx-auto align-items-center">
-               <div class="col-12 text-center py-5">
-                  <h2>¿Porqué elegirnos?</h2>
-                  <p>Calidad ante todo para nuestro clientes</p>
-               </div>
-               <div class="col-lg-4 text-center py-4">
-                  <%= image_tag 'vegetables.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
-                  <h5>Comida fresca</h5>
-                  <p>“Cuando llega el calor, lo que más nos apetece es tener comida fresca, 
-                     riquísima pero también que llevo poco tiempo en la cocina.
-                     Tradition while constantly
-                  </p>
-               </div>
-               <div class="col-lg-4 text-center py-4">
-                  <%= image_tag 'fair.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
-                  <h5>Comercio justo</h5>
-                  <p>“El Comercio Justo es un movimiento internacional que lucha por una mayor justicia global 
-                     en lo económico, social, humano y medioambiental
-                     Tradition while constantly.
-                  </p>
-               </div>
-               <div class="col-lg-4 text-center py-4">
-                  <%= image_tag 'take.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
-                  <h5>A domicilio y retiro en local</h5>
-                  <p>“Hacemos envios dentro de Móstoles
-                     En el horario de 18:00 a 20:00 
-                     de martes a domingo.  y medioambiental
-                     Tradition while constantly.
-                  </p>
+         <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+            <div class="card">
+               <%= image_tag 'lomo1.jpg', alt: 'lomo saltado', class: 'd-block w-100', class: 'card-img-top' %>
+               <div class="card-body">
+                  <h5 class="card-title">Lomo Saltado</h5>
+                  <p class="card-text">Fideos a la plancha con verduras y salsa picante. Estos son nuestros...</p>
+                  <a href="#" class="btn btn-outline-dark">14,00 €</a>
                </div>
             </div>
          </div>
-         </div>
-      </section>
-       <!-- / Calidad-->
-
-        <!-- Nosotros-->
-      <section id="restaurante" class="py-5">
-         <div class="container-fluid">
-            <div class="row mx-auto ">
-               <div class="col-12 text-center py-5">
-                  <h2>Acerca de nosotros</h2>
-                  <p>Somos el mejor restaurante de Móstoles desde el 2010</p>
-               
-                  <p class="py-4">“Cultivate tradition while constantly innovating” – Domaine Clarence Dillon’s philosophy 
-                  also applies to Le Clarence. Chef Christophe Pelé’s cooking revisits the great classics of 
-                  French cuisine in an audacious, modern, and devilishly seductive way. Furthermore, the attentive 
-                  service does not preclude a convivial atmosphere. Everything possible is done to make your meal 
-                  pleasurable and conducive to delicious discoveries. The famous Michelin Guide has just awarded Le 
-                  Clarence with 2 stars in its 2017 edition
-                  </p>
-                  <%= image_tag 'restaurante.jpg', alt: 'restaurante', class: 'd-block w-100', :size => "" %>
-                  <p class="pt-4">Sede principal de Móstoles, España</p>
-              </div> 
-              <div class="col-12 py-4">
-                  <div class="d-grid  col-6 mx-auto py-4">
-                     <button class="btn btn-dark" type="button">Ver más sobre Peruño</button>
-                  </div>
+         <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+            <div class="card">
+               <%= image_tag 'cevichePescado.jpg', alt: 'ceviche personal', class: 'd-block w-100', class: 'card-img-top' %>
+               <div class="card-body">
+                  <h5 class="card-title">Ceviche Personal</h5>
+                  <p class="card-text">Pescado fresco, ají, limón, cebolla, culantro, pimienta, caldo de pescado y sal.</p>
+                  <a href="#" class="btn btn-outline-dark">14,00 €</a>
                </div>
-              <div class="d-grid gap-2 col-6 mx-auto py-2">
-                     <button class="btn btn-outline-dark" type="button">Más sobre Peruñol</button>
-                  </div>
+            </div>
          </div>
+         <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+            <div class="card">
+               <%= image_tag 'tamales.jpg', alt: 'tamales', class: 'd-block w-100', class: 'card-img-top' %>
+               <div class="card-body">
+                  <h5 class="card-title">Tamales</h5>
+                  <p class="card-text">Receta con ingrediente Maíz, choclo, pollo, ajo, cacahuates..</p>
+                  <a href="#" class="btn btn-outline-dark">5,00 €</a>
+               </div>
+            </div>
          </div>
-      </section>
-       <!-- / Nosotros-->
-
+         <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+            <div class="card">
+               <%= image_tag 'lecheTigre.jpg', alt: 'leche de tigre', class: 'd-block w-100', class: 'card-img-top' %>
+               <div class="card-body">
+                  <h5 class="card-title">Leche de Tigre</h5>
+                  <p class="card-text">Refrescante bebida o aperitivo del jugo que deja el ceviche peruano. .</p>
+                  <a href="#" class="btn btn-outline-dark">10,00 €</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+            <div class="card">
+               <%= image_tag 'papa-huancaina.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+               <div class="card-body">
+                  <h5 class="card-title">Papa a la Huancaina</h5>
+                  <p class="card-text">Hecho con papa, huevo, ajíes amarillos frescos, queso fresco, ajo, leche. .</p>
+                  <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Ver plato
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="col-12 py-4">
+            <div class="d-grid gap-2 col-3 mx-auto py-4">
+               <%= link_to 'Ver todos', carta_path, class: "btn btn-dark" %>
+            </div>
+         </div>
+      </div>
+   </div>
+</article>
+<!--/ Categoria-->
+<!-- Calidad-->
+<section id="calidad" class="py-5">
+   <div class="container-fluid">
+      <div class="row mx-auto align-items-center">
+         <div class="col-12 text-center py-5">
+            <h2>¿Porqué elegirnos?</h2>
+            <p>Calidad ante todo para nuestro clientes</p>
+         </div>
+         <div class="col-lg-4 text-center py-4">
+            <%= image_tag 'vegetables.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
+            <h5>Comida fresca</h5>
+            <p>“Cuando llega el calor, lo que más nos apetece es tener comida fresca, 
+               riquísima pero también que llevo poco tiempo en la cocina. Siempre tendras
+               la comida en su punto
+            </p>
+         </div>
+         <div class="col-lg-4 text-center py-4">
+            <%= image_tag 'fair.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
+            <h5>Comercio justo</h5>
+            <p>“El Comercio Justo es un movimiento internacional que lucha por una mayor justicia global 
+               en lo económico, social, humano y medioambiental. Cada vez que nos eliges, nos ayudamos todos
+            </p>
+         </div>
+         <div class="col-lg-4 text-center py-4">
+            <%= image_tag 'take.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
+            <h5>A domicilio y retiro en local</h5>
+            <p>“Hacemos envios dentro de Móstoles
+               En el horario de 18:00 a 20:00 
+               de martes a domingo. También puedes reservar mesa y pedir más información
+            </p>
+         </div>
+      </div>
+   </div>
+   </div>
+</section>
+<!-- / Calidad-->
+<!-- Nosotros-->
+<section id="restaurante" class="py-5">
+   <div class="container-fluid">
+      <div class="row mx-auto ">
+         <div class="col-12 text-center py-5">
+            <h2>Acerca de nosotros</h2>
+            <p>Somos el mejor restaurante de Móstoles desde el 2010</p>
+            <p class="py-4">En Peruñol, de Móstoles, encontrarás gran variedad de platos peruanos elaborados con los mejores ingredientes y 
+               de la mejor calidad. Prueba cada una de las delicias que te ofrece su variada carta y, lo mejor de todo, a muy buen precio. Elige 
+               lo que más te apetezca y haz tu pedido ahora en Just Eat y también en Globo App. ¡No te arrepentirás!
+            </p>
+            <%= image_tag 'local_restaurante.png', alt: 'restaurante', class: 'd-block w-100', :size => "" %>
+            <p class="pt-4">Sede principal de Móstoles, España</p>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- / Nosotros-->
 <!--Modal 4 -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
    <div class="modal-dialog">
@@ -189,21 +170,20 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body">
-            <%= image_tag '001.jpg', alt: 'comida', class: 'd-block 100px', :size => "470x400"  %>    
+            <%= image_tag 'papa-huancaina.jpg', alt: 'papa', class: 'd-block 100px', :size => "470x400"  %>    
             <h5 class="modal-title my-2" id="staticBackdropLabel">
-               Ceviche Mixto
+               Papa a la Huancaina
             </h5>
             <p class="pb-1">Ración del plato: 1 unidad</p>
-            <p>Mixtura de mariscos y pescados frescos, marinados en jugo de limón y aliño peruano, acompañado de cebolla morada, especias frescas, terminada con palta y cebollín. 
-               Incluyen tostadas y salsa de cilantro.
+            <p>Hecho con papa, huevo, ajíes amarillos frescos, queso fresco, ajo, leche.
             </p>
-            <h4 class="text-center py-3">14,00 €</h4>
+            <h4 class="text-center py-3">8,00 €</h4>
             <h6>Alergénos</h6>
             <p>Contiene: Pescado</abbr>pescado, crustáceos y <abbr title="Charlas de huevos" data-bs-toggle="tooltip">Huevo</abbr> moluscos.</p>
             <p>Algunos platos pueden contener trazas de huevo cascara. Por diferentes … Leer más </p>
          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar al restaurante</button>
+            <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar ahora</button>
          </div>
       </div>
    </div>

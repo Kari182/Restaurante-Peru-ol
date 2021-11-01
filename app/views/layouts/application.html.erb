@@ -28,67 +28,33 @@
    </head>
    <body>
       <!-- Header-->
-      <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3">
-         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mx-auto" href="#">
-              <%= image_tag 'logo_perunol.svg', alt: 'logo Peruñol', :size => "32x32", class: 'd-block w-100' %>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#">Ver la carta</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#">Contacto</a>
-                  </li>
-               </ul>
-               <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      </ul>
-            </div>
-         </div>
-      </nav>
-      <!-- /Header-->
-
-      <!-- Header 2 prueba-->
-      <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3">
-         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand mx-auto" href="#">
-              <%= image_tag 'logo_perunol.svg', alt: 'logo Peruñol', :size => "32x32", class: 'd-block w-100' %>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  
-                  <li class="nav-item">
-                     
-                     <%= link_to "Ir a inicio", "/home", class: 'nav-link active' %>
-                     
-                     <%= link_to 'Inicioooo', :action => :home, class: 'nav-link active' %>
-                     
-                  </li>
-                  <li class="nav-item active">
-                     <%= link_to 'Ver la carta', :action => :carta %>
-                     
-                  </li>
-                  <li class="nav-item active">
-                  
-                     <%= link_to 'Contacto', :action => :contacto %>
-                  </li>
-               </ul>
-               <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-      </ul>
-            </div>
-         </div>
-      </nav>
-      <!-- /Header-->
+     <!-- Header 2 prueba-->
+<nav id="header" class="navbar navbar-expand-lg navbar-light bg-light pt-3 pb-3">
+   <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mx-auto" href="home">
+      <%= image_tag 'logo_perunol.svg', alt: 'logo Peruñol', :size => "32x32", class: 'd-block w-100' %>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+               <%= link_to 'Inicio', home_path, class: 'nav-link active' %>
+            </li>
+            <li class="nav-item">
+               <%= link_to 'Ver la carta', carta_path, class: 'nav-link active' %>
+            </li>
+            <li class="nav-item">
+               <%= link_to 'Contacto', contacto_path, class: 'nav-link active' %>
+            </li>
+         </ul>
+         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+         </ul>
+      </div>
+   </div>
+</nav>
+<!-- /Header-->
 
     <%= yield %>
 
@@ -101,14 +67,14 @@
             <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
             <%= image_tag 'logo_perunol.svg', alt: 'icon', :size => "32x32", class: 'd-block w-100'%>
             </a>
-            <span class="text-muted">© 2021 Todos los derechos reservados </span>
+            <span class="text-muted">© 2021 Todos los derechos reservados / Pedidos al 910 86 08 55 </span>
          </div>
          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="fas" href="https://www.facebook.com/thelivegreenco" target="_blank">
+            <li class="ms-3"><a class="fas" href="https://es-es.facebook.com/pages/category/Peruvian-Restaurant/Bar-Peru%C3%91olpe-Mostoles-611678282263163/" target="_blank">
                <i class="fab fa-facebook-square"></i>
                </a>
             </li>
-            <li class="ms-3"><a class="fas" href="https://www.instagram.com/thelivegreenco/" target="_blank">
+            <li class="ms-3"><a class="fas" href="https://www.instagram.com/granperunol.perestaurant/?hl=es" target="_blank">
                <i class="fab fa-instagram-square"></i>
                </a>
             </li>
@@ -116,8 +82,7 @@
       </footer>
    </div>
 </div>
- <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+ 
 
     <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: Bootstrap Bundle with Popper -->
