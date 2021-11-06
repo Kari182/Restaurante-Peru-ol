@@ -17,7 +17,7 @@
                         tu orden directo con nosotros o en las Apps de delivery como Globo y Just Eat.
                      </p>
                      <div class="d-grid gap-2 col-6 mx-start">
-                        <%= link_to 'Ver la carta', carta_path, class: "btn btn-danger" %>
+                        <%= link_to 'Ver Menú', carta_path, class: "btn btn-danger" %>
                      </div>
                   </div>
                </div>
@@ -28,11 +28,11 @@
 </section>
 <!--/ Carrusel-->
 <!--Categoria-->
-<article id="categoria" class="my-5">
+<article id="categoria" class="py-5">
    <div class="container-fluid">
-      <div class="row">
-         <div class="col-12 mb-4 text-center">
-            <h3>Gastronomia Peruana</h3>
+      <div class="row pt-3">
+         <div class="col-12 mb-5 text-center">
+            <h3 class="pb-1">Gastronomia Peruana</h3>
             <p>Directo a tu mesa</p>
          </div>
       </div>
@@ -62,7 +62,7 @@
                <%= image_tag 'cevichePescado.jpg', alt: 'ceviche personal', class: 'd-block w-100', class: 'card-img-top' %>
                <div class="card-body">
                   <h5 class="card-title">Ceviche Personal</h5>
-                  <p class="card-text">Pescado fresco, ají, limón, cebolla, culantro, pimienta, caldo de pescado y sal.</p>
+                  <p class="card-text">Pescado fresco, ají, limón, cebolla, culantro, pimienta, caldo de pescado.</p>
                   <a href="#" class="btn btn-outline-dark">14,00 €</a>
                </div>
             </div>
@@ -92,10 +92,30 @@
                <%= image_tag 'papa-huancaina.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
                <div class="card-body">
                   <h5 class="card-title">Papa a la Huancaina</h5>
-                  <p class="card-text">Hecho con papa, huevo, ajíes amarillos frescos, queso fresco, ajo, leche. .</p>
+                  <p class="card-text">Hecho con papa, huevo, ajíes amarillos frescos, ajo, leche. .</p>
                   <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   Ver plato
                   </button>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+            <div class="card">
+               <%= image_tag 'caldo_gallina.jpg', alt: 'leche de tigre', class: 'd-block w-100', class: 'card-img-top' %>
+               <div class="card-body">
+                  <h5 class="card-title">Caldo de Gallina</h5>
+                  <p class="card-text">Refrescante bebida o aperitivo del jugo que deja el ceviche peruano. .</p>
+                  <a href="#" class="btn btn-outline-dark">10,00 €</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
+            <div class="card">
+               <%= image_tag 'caldo_mote.jpg', alt: 'leche de tigre', class: 'd-block w-100', class: 'card-img-top' %>
+               <div class="card-body">
+                  <h5 class="card-title">Caldo Mote</h5>
+                  <p class="card-text">Refrescante bebida o aperitivo del jugo que deja el ceviche peruano. .</p>
+                  <a href="#" class="btn btn-outline-dark">10,00 €</a>
                </div>
             </div>
          </div>
@@ -109,34 +129,34 @@
 </article>
 <!--/ Categoria-->
 <!-- Calidad-->
-<section id="calidad" class="py-5">
-   <div class="container-fluid">
+<section id="calidad" class="pt-5 pb-5">
+   <div class="container-fluid pb-5">
       <div class="row mx-auto align-items-center">
          <div class="col-12 text-center py-5">
-            <h2>¿Porqué elegirnos?</h2>
+            <h2 class="pb-2">¿Porqué elegirnos?</h2>
             <p>Calidad ante todo para nuestro clientes</p>
          </div>
          <div class="col-lg-4 text-center py-4">
             <%= image_tag 'vegetables.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
-            <h5>Comida fresca</h5>
+            <h5 class="mt-2 pb-3">Comida fresca</h5>
             <p>“Cuando llega el calor, lo que más nos apetece es tener comida fresca, 
                riquísima pero también que llevo poco tiempo en la cocina. Siempre tendras
-               la comida en su punto
+               la comida en su punto.
             </p>
          </div>
          <div class="col-lg-4 text-center py-4">
             <%= image_tag 'fair.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
-            <h5>Comercio justo</h5>
-            <p>“El Comercio Justo es un movimiento internacional que lucha por una mayor justicia global 
-               en lo económico, social, humano y medioambiental. Cada vez que nos eliges, nos ayudamos todos
+            <h5 class="mt-2 pb-3">Comercio justo</h5>
+            <p>“El Comercio Justo es un movimiento que lucha por una mayor justicia global 
+               en lo económico, social, humano y medioambiental. Cada vez que nos eliges, nos ayudamos todos.
             </p>
          </div>
          <div class="col-lg-4 text-center py-4">
             <%= image_tag 'take.svg', alt: 'comida', class: 'd-block w-100', :size => "72x72" %>
-            <h5>A domicilio y retiro en local</h5>
-            <p>“Hacemos envios dentro de Móstoles
-               En el horario de 18:00 a 20:00 
-               de martes a domingo. También puedes reservar mesa y pedir más información
+            <h5 class="mt-2 pb-3">A domicilio y retiro en local</h5>
+            <p>Hacemos envios dentro de Móstoles con envío gratuito desde 9,90 € (pedido min). 
+            Abrimos de Martes a Sábado de 10:00 – 16:30 y 19:30 – 22:30 Domingo hasta 
+            las 17:00 hrs.
             </p>
          </div>
       </div>
@@ -149,14 +169,14 @@
    <div class="container-fluid">
       <div class="row mx-auto ">
          <div class="col-12 text-center py-5">
-            <h2>Acerca de nosotros</h2>
+            <h2 class="pb-2">Acerca de nosotros</h2>
             <p>Somos el mejor restaurante de Móstoles desde el 2010</p>
             <p class="py-4">En Peruñol, de Móstoles, encontrarás gran variedad de platos peruanos elaborados con los mejores ingredientes y 
                de la mejor calidad. Prueba cada una de las delicias que te ofrece su variada carta y, lo mejor de todo, a muy buen precio. Elige 
                lo que más te apetezca y haz tu pedido ahora en Just Eat y también en Globo App. ¡No te arrepentirás!
             </p>
-            <%= image_tag 'local_restaurante.png', alt: 'restaurante', class: 'd-block w-100', :size => "" %>
-            <p class="pt-4">Sede principal de Móstoles, España</p>
+            <%= image_tag 'local_restaurante.png', alt: 'restaurante', class: 'd-block w-100', :size => "750x600" %>
+            <p class="pt-4">Sede principal de Móstoles, Calle Camino de Humanes, 7, Móstoles, 28938</p>
          </div>
       </div>
    </div>
