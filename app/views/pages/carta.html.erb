@@ -32,7 +32,9 @@
       <div class="card-body">
          <h5 class="card-title">Tamales</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-outline-dark">Ver plato 5,00 €</a>
+         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#verModal1">
+         Ver plato 5,00 €
+         </button>
       </div>
    </div>
 </div>
@@ -42,7 +44,8 @@
       <div class="card-body">
          <h5 class="card-title">Yuca Frita</h5>
          <p class="card-text">Judí­as de soja hervidas. Otra de la especialidades de la cocina peruana.</p>
-         <a href="#" class="btn btn-outline-dark">Ver plato 8,00 €</a>
+         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#verModal2">
+         Ver plato 8,00 €
       </div>
    </div>
 </div>
@@ -52,42 +55,25 @@
       <div class="card-body">
          <h5 class="card-title">Papa a la Huancaína</h5>
          <p class="card-text">Fideos a la plancha con verduras y salsa picante. Estos son nuestros...</p>
-         <a href="#" class="btn btn-outline-dark">Ver plato 8,00 €</a>
+         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#verModal3">
+         Ver plato 8,00 €
+      </div>
       </div>
    </div>
 </div>
 <div class="col-lg-4 col-xl-3 col-md-6 mb-4">
    <div class="card">
-      <%= image_tag 'food_01.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
+      <%= image_tag 'ensalada_mixta.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
       <div class="card-body">
          <h5 class="card-title">Ensalada Mixta</h5>
          <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-outline-dark">Ver plato 6,00 €</a>
-      </div>
-   </div>
-</div>
-<div class="col-lg-4 col-xl-3 col-md-6 mb-4">
-   <div class="card">
-      <%= image_tag 'food_01.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
-      <div class="card-body">
-         <h5 class="card-title">Pan con Chicharrón</h5>
-         <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <a href="#" class="btn btn-outline-dark">Ver plato 6,00 €</a>
-      </div>
-   </div>
-</div>
-<div class="col-lg-4 col-xl-3 col-md-6 mb-4">
-   <div class="card">
-      <%= image_tag '001.jpg', alt: 'comida', class: 'd-block w-100', class: 'card-img-top' %>
-      <div class="card-body">
-         <h5 class="card-title">Causa Limeña</h5>
-         <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#verModal4">
          Ver plato 6,00 €
-         </button>
+      </div>
       </div>
    </div>
 </div>
+
 <h4 id="scrollspyHeading2" class="pt-5 pb-3">Sopas</h4>
 <p>
 <div class="row">
@@ -362,30 +348,107 @@
 </div>
 <!-- /menu scrollspy -->
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<!-- Modal 1 -->
+<div class="modal fade" id="verModal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">
          <div class="modal-header">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body">
-            <%= image_tag '001.jpg', alt: 'comida', class: 'd-block 100px', :size => "470x300"  %>    
+            <%= image_tag 'tamales.jpg', alt: 'comida', class: 'd-block 100px', :size => "470x300"  %>    
             <h5 class="modal-title my-2" id="staticBackdropLabel">
-               Ceviche Mixto
+               Tamales
             </h5>
-            <p class="pb-1">Ración del plato: 1 unidad</p>
-            <p>Mixtura de mariscos y pescados frescos, marinados en jugo de limón y aliño peruano, acompañado de cebolla morada, especias frescas, terminada con palta y cebollín. 
-               Incluyen tostadas y salsa de cilantro.
+            <p>Ración del plato: 1 unidad</p>
+            <p>1/4 pollo a la brasa, papas fritas. arroz chaufa y crema.
             </p>
-            <h4 class="text-center py-3">14,00 €</h4>
+            <h4 class="text-center py-2">5,00 €</h4>
             <h6>Alergénos</h6>
-            <p>Contiene: Pescado</abbr>pescado, crustáceos y <abbr title="Charlas de huevos" data-bs-toggle="tooltip">Huevo</abbr> moluscos.</p>
-            <p>Algunos platos pueden contener trazas de huevo cascara. Por diferentes … Leer más </p>
-         </div>
+            <p>Contiene: Pescado, moluscos.</p>
+          </div>
          <div class="modal-footer">
             <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar al restaurante</button>
          </div>
       </div>
    </div>
 </div>
+
+<!-- Modal 2-->
+<div class="modal fade" id="verModal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+            <%= image_tag 'yuca.jpg', alt: 'comida', class: 'd-block 100px', :size => "470x300"  %>    
+            <h5 class="modal-title my-2" id="staticBackdropLabel">
+               Yuca Frita
+            </h5>
+            <p>Ración del plato: 1 unidad</p>
+            <p>1/4 pollo a la brasa, papas fritas. arroz chaufa y crema.
+            </p>
+            <h4 class="text-center py-2">8,00 €</h4>
+            <h6>Alergénos</h6>
+            <p>Contiene: Pescado, moluscos.</p>
+          </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar al restaurante</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- Modal 3-->
+<div class="modal fade" id="verModal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+            <%= image_tag 'papa-huancaina.jpg', alt: 'comida', class: 'd-block 100px', :size => "470x300"  %>    
+            <h5 class="modal-title my-2" id="staticBackdropLabel">
+               Papa a la Huancaína
+            </h5>
+            <p>Ración del plato: 1 unidad</p>
+            <p>1/4 pollo a la brasa, papas fritas. arroz chaufa y crema.
+            </p>
+            <h4 class="text-center py-2">8,00 €</h4>
+            <h6>Alergénos</h6>
+            <p>Contiene: Pescado, moluscos.</p>
+          </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar al restaurante</button>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- Modal 4-->
+<div class="modal fade" id="verModal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+         <%= image_tag 'ensalada_mixta.jpg', alt: 'comida', class: 'd-block 100px', :size => "470x300"  %>
+            <h5 class="modal-title my-2" id="staticBackdropLabel">
+               Ensalada mixta
+            </h5>
+            <p>Ración del plato: 1 unidad</p>
+            <p>1/4 pollo a la brasa, papas fritas. arroz chaufa y crema.
+            </p>
+            <h4 class="text-center py-2">8,00 €</h4>
+            <h6>Alergénos</h6>
+            <p>Contiene: Pescado, moluscos.</p>
+          </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar al restaurante</button>
+         </div>
+      </div>
+   </div>
+</div>
+

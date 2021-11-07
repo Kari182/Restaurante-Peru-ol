@@ -43,7 +43,9 @@
                <div class="card-body">
                   <h5 class="card-title">Ceviche Mixto</h5>
                   <p class="card-text">Mixtura de mariscos y pescados frescos, marinados en jugo de limón.</p>
-                  <a href="#" class="btn btn-outline-dark">16,00 €</a>
+                   <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Ver plato
+                  </button>
                </div>
             </div>
          </div>
@@ -182,7 +184,9 @@
    </div>
 </section>
 <!-- / Nosotros-->
-<!--Modal 4 -->
+
+
+<!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">
@@ -190,20 +194,19 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body">
-            <%= image_tag 'papa-huancaina.jpg', alt: 'papa', class: 'd-block 100px', :size => "470x400"  %>    
+         <%= image_tag 'cevicheMixto.jpg', alt: 'comida', class: 'd-block 100px', :size => "470x300"  %>
             <h5 class="modal-title my-2" id="staticBackdropLabel">
-               Papa a la Huancaina
+               Ceviche Mixto
             </h5>
-            <p class="pb-1">Ración del plato: 1 unidad</p>
-            <p>Hecho con papa, huevo, ajíes amarillos frescos, queso fresco, ajo, leche.
+            <p>Ración del plato: 1 unidad</p>
+            <p>1/4 pollo a la brasa, papas fritas. arroz chaufa y crema.
             </p>
-            <h4 class="text-center py-3">8,00 €</h4>
+            <h4 class="text-center py-2">14,00 €</h4>
             <h6>Alergénos</h6>
-            <p>Contiene: Pescado</abbr>pescado, crustáceos y <abbr title="Charlas de huevos" data-bs-toggle="tooltip">Huevo</abbr> moluscos.</p>
-            <p>Algunos platos pueden contener trazas de huevo cascara. Por diferentes … Leer más </p>
-         </div>
+            <p>Contiene: Pescado, moluscos.</p>
+          </div>
          <div class="modal-footer">
-            <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar ahora</button>
+            <button type="button" class="btn btn-dark col-6 mx-auto ">Llamar al restaurante</button>
          </div>
       </div>
    </div>

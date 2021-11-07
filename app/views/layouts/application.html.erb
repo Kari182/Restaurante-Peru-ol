@@ -59,57 +59,35 @@
     <%= yield %>
 
 
-<!--footer-->
-<div id="dark" class="">
-   <div class="container" >
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-         <div class="col-md-6 d-flex align-items-center">
-            <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <%= image_tag 'logo_perunol.svg', alt: 'icon', :size => "32x32", class: 'd-block w-100'%>
-            </a>
-            <span class="text-muted">© 2021 Todos los derechos reservados / Pedidos al 910 86 08 55 </span>
-         </div>
-         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="fas" href="https://es-es.facebook.com/pages/category/Peruvian-Restaurant/Bar-Peru%C3%91olpe-Mostoles-611678282263163/" target="_blank">
-               <i class="fab fa-facebook-square"></i>
-               </a>
-            </li>
-            <li class="ms-3"><a class="fas" href="https://www.instagram.com/granperunol.perestaurant/?hl=es" target="_blank">
-               <i class="fab fa-instagram-square"></i>
-               </a>
-            </li>
-         </ul>
-      </footer>
-   </div>
-</div>
  
-
-
-<footer class="page-footer pt-5">
+<footer id="dark" class="page-footer pt-4">
           <div class="container">
             <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Restaurante Peruñol</h5>
+            <div class="col-12 pb-3">
+            <%= image_tag 'logo_perunol.svg', alt: 'icon', :size => "40x40", class: 'd-block w-100'%>
+            </div>
+            <div class="col-md-9 pb-2">
+               <h6 class="white-text">Contacto</h6>
                 <p class="grey-text text-lighten-4">Puedes hacer tu pedido ahora en Just Eat y Globo App. ¡No te arrepentirás!</p>
-                <p>Pedidos al local: 910 86 08 55</p>
-              
+                <p>T. 910 86 08 55</p>
+                <p>hola@perunol.es</p>  
               </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Redes Sociales</h5>
+              <div class="col-md-3">
+                <h6 class="white-text">Redes Sociales</h6>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://es-es.facebook.com/pages/category/Peruvian-Restaurant/Bar-Peru%C3%91olpe-Mostoles-611678282263163/" target="_blank">Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/granperunol.perestaurant/?hl=es" target="_blank">Instagram</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="footer-copyright py-5">
+          <div class="footer-copyright py-2">
             <div class="container">
-            © 2021 Todos los derechos reservados
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <p>© 2021 Todos los derechos reservados</p>
             </div>
           </div>
         </footer>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
   <!-- Option 1: Bootstrap Bundle with Popper -->
